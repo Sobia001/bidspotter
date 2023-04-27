@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ---Linking Bootstrap5 CDN--- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- ---Linking Font Awesome CDN--- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400,700&display=swap" rel="stylesheet">
+
+
+    <!-- ---Linking Customized CSS File--- -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ---Website Main Browser Title--- -->
+    <title>View Lots</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <!-- -------------------Row Left Coloumn--------------- -->
+                <div class="col-5">
+
+                    <!-- -----Breadcrumb Div 1---- -->
+                    <div>
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                            <ol class="breadcrumb view_lot_breadcrumb_div">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Food and Beverage Equipment </li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                    <!-- ------Main Heading Div 2------ -->
+                    <div>
+                        <h2 class="view_lot_heading">Food and Beverage Equipment
+                            for Sale</h2>
+                    </div>
+
+                    <!-- ------Paragraph Div 3------- -->
+                    <div>
+                        <p class="view_lot_paragraph">We Found 3042 Item Matching Your Search </p>
+                    </div>
+
+                    <!-- ------Search Lot Div 4--------- -->
+                    <div>
+                        <h4 class="view_lots_heading_4">Refine Your Search </h4>
+
+                        <!-- ------Lot Search Accordions------- -->
+                        <div class="container mt-3 accordion_container">
+                            <div class="accordion view_lots_accordion_div" id="accordionPanelsStayOpenExample">
+                                <div class="accordion-item view_lots_accordion_item">
+                                    <div class="accordion-header" id="panelsStayOpen-headingOne">
+                                        <button class="accordion-button view_lots_accordion_button" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                            aria-expanded="true" aria-controls="panelsStayOpen-collapseOne"
+                                            id="accordion1btn">
+                                            <input class="form-check-input chkAll me-2 accordion_check_box"
+                                                type="checkbox" value="" id="chkAccordion1All">
+                                            Lots With Image Only
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="accordion-item view_lots_accordion_item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                        <button class="accordion-button view_lots_accordion_button" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                            <div class="form-check accordion_checkbox_div mt-1 ">
+                                                <input class="form-check-input chkAll me-2 accordion_check_box"
+                                                    type="checkbox" value="" id="chkAccordion2All">
+                                            </div>
+                                            Show Only Bulk Lots
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div class="accordion-item view_lots_accordion_item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                        <button class="accordion-button barfi-btn view_lots_accordion_button"
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                            aria-controls="panelsStayOpen-collapseThree">
+                                            <div class="form-check accordion_checkbox_div mt-1">
+                                                <input class="form-check-input chkAll me-2 accordion_check_box"
+                                                    type="checkbox" value="" id="chkAccordion3All">
+                                            </div>
+                                            Location
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="panelsStayOpen-headingThree">
+                                        <div class="accordion-body view_lots_accordion_body">
+                                            <form class="row g-3 view_lots_location_row">
+                                                <h4>Within:</h4>
+                                                <div class="col-md-6 view_lots_location_col">
+                                                    <select
+                                                        class="form-select form-select-md mb-3 view_lots_location_col_form_select"
+                                                        aria-label=".form-select-lg example">
+                                                        <option selected>Select Miles</option>
+                                                        <option value="1">10 Miles</option>
+                                                        <option value="2">20 Miles</option>
+                                                        <option value="3">30 Miles</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6 view_lots_location_col">
+                                                    <input type="text"
+                                                        class="form-control view_lots_location_col_form_select"
+                                                        id="inputZip" placeholder="Post/Zip Code">
+                                                </div>
+                                                <div class="col-md-12 view_lots_location_col">
+                                                    <select
+                                                        class="form-select form-select-md mb-3 view_lots_location_col_form_select"
+                                                        aria-label=".form-select-lg example">
+                                                        <option selected>State</option>
+                                                        <option value="1">Afghanistan</option>
+                                                        <option value="2">Australia</option>
+                                                        <option value="3">Bangladesh</option>
+                                                        <option value="4">Brazil</option>
+                                                        <option value="5">Canada</option>
+                                                        <option value="6">Colombia</option>
+                                                        <option value="7">Denmark</option>
+                                                        <option value="8">Egypt</option>
+                                                        <option value="9">France</option>
+                                                        <option value="10">Germany</option>
+                                                        <option value="11">Hungary</option>
+                                                        <option value="12">India</option>
+                                                        <option value="13">Liberia</option>
+                                                        <option value="14">Malaysia</option>
+                                                        <option value="15">Morocco</option>
+                                                        <option value="16">Pakistan</option>
+                                                        <option value="17">Portugal</option>
+                                                        <option value="18">Sudan</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-12 view_lots_location_col">
+                                                    <button type="submit"
+                                                        class="btn btn-primary view_lots_location_col_form_select">Apply
+                                                        Filter To Result </button>
+                                                </div>
+                                                <div class="view_lots_location_row_border">
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-7"></div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ---Javascript Plugin CDN Script--- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- ---Linking Customized JS File--- -->
+    <script src="js/event.js"></script>
+</body>
+
+</html>

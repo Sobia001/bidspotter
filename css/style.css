@@ -1,0 +1,523 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    background-color: var(--bg_color3);
+    overflow: auto;
+}
+
+:root{
+    /* ----Background Colors------ */
+    --bg_color1: #4811BD;
+    --bg_color2: #FFFFFF;
+    --bg_color3: #D9D9D9;
+    --bg_color4: #FF7A42;
+    --bg_color5: #8E6262;
+    /* ----- Border Colors------ */
+    --bd_color1: #594D4D;
+    /* ----- Text Colors------ */
+    --txt_color1: #FFFFFF;
+    --txt_color2: #594D4D;
+    --txt_color3: #FF7A42;
+    --txt_color4: #000000;
+    --txt_color5: #272121;
+}
+
+/* ******************************************Header************************************************ */
+
+/* ----------------Header 1-------------- */
+
+.header_1{
+    background-color: var(--bg_color1) !important;
+    padding: 10px 80px;
+}
+
+.header_1_name{
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--txt_color1);
+}
+
+.header_1_name:hover{
+    color: var(--txt_color1);
+}
+
+.header_1_right_a{
+    text-align: end;
+}
+
+/* .row>*{
+    padding: 0px;
+} */
+
+.header_1_right a{
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--txt_color1);
+    padding-right: 11px;
+    text-decoration: none;
+    position: relative;
+    top: 15px;
+}
+
+.header_1_right button{
+    width: 120px;
+    height: 34px;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 0px 0px;
+    border-radius: 5px;
+    background-color: var(--bg_color4);
+    color: var(--txt_color1);
+    margin-top: 0.5rem;
+    transition: .3s all ease-in-out;
+}
+
+.header_1_right button:hover{
+    background-color: var(--bg_color2);
+    color: var(--txt_color3);
+}
+
+.header_1_search_div{
+    /* padding-left: 10px; */
+    position: relative;   /* position set for header_1_search_icon img */
+    width: 30%;
+}
+
+.header_1_search{
+    width: 100%;
+    height: 34px;
+    color: var(--txt_color1);
+    border-top: 0.5px solid var(--bd_color1);
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.header_1_search:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.header_1_search:active{
+    outline: none;
+}
+
+.header_1_search_icon img{
+    position: absolute;
+    color: var(--bg_color4);
+    width: 20px;
+    top: -45px;
+    right: -178px;
+}
+
+/* ----------------Header 2------------------ */
+
+.header_2{
+    height: 70px;
+    background-color: var(--bg_color2) !important;
+}
+
+.header_2_tabs ul li{
+    margin-left: 28px;
+}
+
+.header_2_tabs ul li a{
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--txt_color2);
+    transition: .3s all ease-in-out;
+}
+
+.active a{
+    color: var(--txt_color2) !important;
+}
+
+.header_2_tabs ul li a:hover{
+    color: var(--txt_color3);
+}
+
+
+/* ******************************************Footer************************************************ */
+
+.footer_1{
+    background-color: var(--bg_color1);
+    padding: 20px 40px;
+}
+
+.footer_1_col_1 p{
+    color: var(--txt_color1);
+    padding-right: 61px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.footer_1_col_1 a{
+    color: var(--txt_color1);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.footer_1_col_1 a:hover{
+    color: var(--txt_color1);
+}
+
+.footer_1_col_2{
+    padding-top: 20px;
+}
+
+.footer_1_col_2 h5{
+    color: var(--txt_color1);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.footer_1_col_2 ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.footer_1_col_2 a{
+    color: var(--txt_color1);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: .3s all ease-in-out;
+}
+
+.footer_1_col_2 a:hover{
+    color: var(--txt_color3);
+}
+
+.footer_1_social_icons{
+    gap: 50px;
+}
+
+.footer_1_social_icons a{
+    font-size: 30px;
+    color: var(--txt_color1);
+}
+
+.footer_1_social_icons a:hover{
+    color: var(--txt_color3);
+    transition: .3s all ease-in-out;
+}
+
+@media only screen and (max-width: 320px){
+    .footer_1_col_1 p{
+        text-align: left;
+    }
+
+}
+
+/* ******************************************Home Page************************************************ */
+
+/* ------------------Carousel Div------------------ */
+
+.home_page_carousel_img{
+    height: 485px; /* set the desired height of the carousel container */
+  }
+  
+.home_page_carousel_img img {
+    height: 100%; /* set the height of the carousel images to 100% of the container height */
+    object-fit: cover; /* ensure the images cover the entire container */
+  }
+
+.home_page_carousel_indicators .active {
+    background-color: #000000;
+  }
+
+.home_page_carousel_indicators [data-bs-target]{
+    width: 13px;
+    height: 14px;
+    border-radius: 50%;
+  }
+
+.home_page_carousel_indicators {
+    position: absolute;
+    right: 0;
+    bottom: -65px;
+    left: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #D9D9D9;
+}
+
+/* -------------Search Bar Div-------------- */
+
+.home_page_search_bar{
+    margin-top: 60px;
+    width: 70%;
+}
+
+.search_bar_div{
+    position: relative;
+}
+
+.search_bar_img{
+    position: absolute;
+    top: 68px;
+    right: 185px;
+    width: 20px;
+}
+@media only screen and (max-width: 1024px) { 
+
+    .search_bar_img {
+        right: 154px;
+    }
+}
+
+@media only screen and (max-width: 786px) { 
+
+    .search_bar_img {
+        right: 119px;
+    }
+}
+
+@media only screen and (max-width: 768px) { 
+
+    .search_bar_img {
+        right: 121px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .search_bar_img {
+        right: 96px;
+
+    }
+}
+@media only screen and (max-width: 425px){
+    .search_bar_img {
+        right: 69px;
+    }
+}
+
+/* --------------------Cards Div------------------- */
+
+.home_page_card{
+    border-radius: 20px;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.34); */
+}
+
+.home_page_card_img_1,
+.home_page_card_img_2,
+.home_page_card_img_3,
+.home_page_card_img_4,
+.home_page_card_img_5,
+.home_page_card_img_6,
+.home_page_card_img_7,
+.home_page_card_img_8
+{
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 266px;
+}
+
+.home_page_card_img_1{
+    background-image: url(../images/cards/image\ 29.png);
+}
+
+.home_page_card_img_2{
+    background-image: url(../images/cards/image\ 33.png);
+}
+
+.home_page_card_img_3{
+    background-image: url(../images/cards/image\ 35.png);
+}
+
+.home_page_card_img_4{
+    background-image: url(../images/cards/image\ 37.png);
+}
+
+.home_page_card_img_5{
+    background-image: url(../images/cards/image\ 30.png);
+}
+
+.home_page_card_img_6{
+    background-image: url(../images/cards/image\ 34.png);
+}
+
+.home_page_card_img_7{
+    background-image: url(../images/cards/image\ 36.png);
+}
+
+.home_page_card_img_8{
+    background-image: url(../images/cards/image\ 38.png);
+}
+
+.home_page_card_buttons{
+    background-color: var(--bg_color5);
+    height: 34px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.home_page_card_buttons .btn{
+    width: 118px;
+    height: 27px;
+    background-color: #8E6262;
+    outline: white;
+    box-shadow: white;
+    border: 1px solid white !important;
+}
+
+.home_page_card_buttons .btn :active{
+    background-color: #8E6262 !important;
+}
+
+.home_page_card_buttons .btn :focus-visible{
+    box-shadow: none;
+}
+
+.home_page_card_buttons a{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.home_page_card_heading h6{
+    background-color: var(--bg_color3);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--txt_color4);
+    margin-bottom: 0px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+@media only screen and (max-width: 1024px){
+    .home_page_card_buttons a {
+        font-size: 11px;
+    }
+    .home_page_card_heading h6 {
+        font-size: 16px;
+    }
+}
+
+/* ******************************************View Lots Page************************************************ */
+
+/* ------------------Breadcrumb Div------------------ */
+
+.view_lot_breadcrumb_div a{
+    text-decoration: none;
+    color: var(--txt_color4);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.view_lot_heading{
+    /* padding-right: 80px; */
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--txt_color4);
+
+}
+
+.view_lot_paragraph{
+    padding-top: 20px;
+}
+
+.view_lots_heading_4{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/* ------------------Accordion Div------------------ */
+
+.accordion_container{
+    padding-left: 0;
+}
+
+.view_lots_accordion_div{
+
+}
+
+.view_lots_accordion_item{
+    background-color: var(--bg_color3);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin-bottom:20px;
+}
+
+.view_lots_accordion_button{
+    background: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 0px;
+    border-bottom: 1px solid black;
+}
+/* 
+.view_lots_accordion_button:focus{
+    border-color: transparent !important;
+} */
+  
+.view_lots_accordion_button[aria-expanded="true"]{
+    background-color: var(--bg_color3);
+    padding-left: 0;
+}
+
+.view_lots_accordion_button:after{
+    color:#404040;
+    width: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--bg_color3);
+    color: var(--txt_color4);
+    font-weight: 600;
+    font-size: 20px;
+    box-shadow: none;
+    padding-left: 0;
+}
+
+.accordion_checkbox_div{
+    padding-left: 0;
+}
+
+.accordion_check_box{
+    position: absolute;
+    top: 17px;
+    right: 10px;
+}
+
+.view_lots_accordion_body{
+    padding-left: 0;
+}
+
+
+.view_lots_location_row h4{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.view_lots_location_col_form_select{
+    color: var(--txt_color5);
+    border-radius: 0;
+    border: 1px solid var(--txt_color5);
+}
+
+.view_lots_location_col_form_select::placeholder{
+    color: var(--txt_color5);  
+}
+
+.view_lots_location_col button{
+    width: 100%;
+    background-color: var(--bg_color1);
+    color: var(--txt_color1);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.view_lots_location_row_border{
+    border-bottom: 1px solid black;
+}
+
+
