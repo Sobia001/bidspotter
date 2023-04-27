@@ -19,83 +19,192 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- ---Website Main Browser Title--- -->
-    <title>Bid Spotter</title>
+    <title>Home Page</title>
 </head>
 
 <body>
+    <section>
 
-    <header>
-        <nav class="navbar navbar-light bg-light header_1">
-            <div class="container">
-                <!-- ----Header 1 Logo---- -->
-                <a class="navbar-brand header_1_name">BidSpotter</a>
-                <!-- ----Header 1 Buttons---- -->
-                <div class="header_1_right  row">
-                    <div class="col-md-8 col-sm-12 ps-0 pe-0">
-                        <a href="#">My BidSpotter</a>
-                        <button type="button" class="btn btn-secondary">Register</button>
-                        <button type="button" class="btn btn-secondary">Sign In</button>
-                    </div>
-
-                    <!-- ----header 1 Search Field----- -->
-                    <div class="header_1_search_div col-md-4 col-sm-12">
-                        <div class="row header_1_search_row">
-                            <div class="col-12">
-                                <div style="position: relative;">
-                                    <form>
-                                        <input class="form-control header_1_search me-2" type="search"
-                                            placeholder="Search for lots" aria-label="Search">
-                                    </form>
-                                    <span>
-                                        <a class="header_1_search_icon" href="#"><img src="images/Vector.png"
-                                                alt=""></a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
+        <!-- -----------------------Home Page Carousel Div------------------------ -->
+        <div class="container mt-5">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <!-- Carousel Sliding Radio Buttons -->
+                <div class="carousel-indicators home_page_carousel_indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
                 </div>
 
-            </div>
-        </nav>
+                <!-- Carousel Images -->
+                <div class="carousel-inner home_page_carousel">
+                    <div class="carousel-item home_page_carousel_img active">
+                        <img src="images/slider/pexels-rodnae-productions-8369590.jpg" class="d-block w-100"
+                            alt="slide_1">
+                    </div>
+                    <div class="carousel-item home_page_carousel_img">
+                        <img src="images/slider/pexels-bich-tran-709237.jpg" class="d-block w-100" alt="slide_2">
+                    </div>
+                    <div class="carousel-item home_page_carousel_img">
+                        <img src="images/slider/pexels-dan-cristian-pădureț-1476320.jpg" class="d-block w-100"
+                            alt="slide_3">
+                    </div>
+                    <div class="carousel-item home_page_carousel_img">
+                        <img src="images/slider/pexels-digital-buggu-167538.jpg" class="d-block w-100" alt="slide_4">
+                    </div>
+                    <div class="carousel-item home_page_carousel_img">
+                        <img src="images/slider/pexels-fauxels-3183197.jpg" class="d-block w-100" alt="slide_5">
+                    </div>
+                    <div class="carousel-item home_page_carousel_img">
+                        <img src="images/slider/pexels-ksenia-chernaya-8535572.jpg" class="d-block w-100" alt="slide_6">
+                    </div>
+                </div>
 
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light header_2">
-            <div class="container p-0">
-                <!-- -----Toggler Button---- -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <!-- Carousel Left & Right Button -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <!-- -----Header 2 Tabs------ -->
-                <div class="collapse navbar-collapse header_2_tabs" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link ps-0 active" aria-current="page" href="#">Browse By Category</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Auction</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Auctioneers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Auction Alert</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Help</a>
-                        </li>
-                    </ul>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- ------------------------- Home Page Search Div------------------- -->
+        <div class="container mb-5">
+            <div class="search_bar_div d-flex justify-content-center">
+                <!-- Search Input Field -->
+                <form class="d-flex home_page_search_bar">
+                    <input class="form-control home_page_search_bar_control me-2" type="search"
+                        placeholder="Search for lots" aria-label="Search">
+                </form>
+                <!-- Search Icon Image -->
+                <img class="search_bar_img" src="images/Vector.png" alt="">
+            </div>
+        </div>
+
+        <!-- ------------------------- Home Page Category Cards Div------------------- -->
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-12 mb-4">
+                    <div class="card home_page_card shadow">
+                        <div class="home_page_card_img_1">
+                        </div>
+                        <div class="card-body home_page_card_buttons">
+                            <a href="#" class="btn btn-primary">See Auction</a>
+                            <a href="#" class="btn btn-primary">See Lots</a>
+                        </div>
+                        <div class="home_page_card_heading">
+                            <h6>Food and Beverage</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 mb-4">
+                    <div class="card home_page_card shadow">
+                        <div class="home_page_card_img_2">
+                        </div>
+                        <div class="card-body home_page_card_buttons">
+                            <a href="#" class="btn btn-primary">See Auction</a>
+                            <a href="#" class="btn btn-primary">See Lots</a>
+                        </div>
+                        <div class="home_page_card_heading">
+                            <h6>Industrial and Commercial</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 mb-4">
+                    <div class="card home_page_card shadow">
+                        <div class="home_page_card_img_3">
+                        </div>
+                        <div class="card-body home_page_card_buttons">
+                            <a href="#" class="btn btn-primary">See Auction</a>
+                            <a href="#" class="btn btn-primary">See Lots</a>
+                        </div>
+                        <div class="home_page_card_heading">
+                            <h6>Metal Working</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 mb-4">
+                    <div class="card home_page_card shadow">
+                        <div class="home_page_card_img_4">
+                        </div>
+                        <div class="card-body home_page_card_buttons">
+                            <a href="#" class="btn btn-primary">See Auction</a>
+                            <a href="#" class="btn btn-primary">See Lots</a>
+                        </div>
+                        <div class="home_page_card_heading">
+                            <h6>Heavy Construction</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 mb-4">
+                    <div class="card home_page_card shadow">
+                        <div class="home_page_card_img_5">
+                        </div>
+                        <div class="card-body home_page_card_buttons">
+                            <a href="#" class="btn btn-primary">See Auction</a>
+                            <a href="#" class="btn btn-primary">See Lots</a>
+                        </div>
+                        <div class="home_page_card_heading">
+                            <h6>Agriculture</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 mb-4">
+                    <div class="card home_page_card shadow">
+                        <div class="home_page_card_img_6">
+                        </div>
+                        <div class="card-body home_page_card_buttons">
+                            <a href="#" class="btn btn-primary">See Auction</a>
+                            <a href="#" class="btn btn-primary">See Lots</a>
+                        </div>
+                        <div class="home_page_card_heading">
+                            <h6>Wood Working</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 mb-4">
+                    <div class="card home_page_card shadow">
+                        <div class="home_page_card_img_7">
+                        </div>
+                        <div class="card-body home_page_card_buttons">
+                            <a href="#" class="btn btn-primary">See Auction</a>
+                            <a href="#" class="btn btn-primary">See Lots</a>
+                        </div>
+                        <div class="home_page_card_heading">
+                            <h6>Printing Equipment</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 mb-4">
+                    <div class="card home_page_card shadow">
+                        <div class="home_page_card_img_8">
+                        </div>
+                        <div class="card-body home_page_card_buttons">
+                            <a href="#" class="btn btn-primary">See Auction</a>
+                            <a href="#" class="btn btn-primary">See Lots</a>
+                        </div>
+                        <div class="home_page_card_heading">
+                            <h6>Laboratery Equipment</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-
-
-
+        </div>
+    </section>
     <!-- ---Javascript Plugin CDN Script--- -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
