@@ -20,6 +20,7 @@ body{
     --txt_color3: #FF7A42;
     --txt_color4: #000000;
     --txt_color5: #272121;
+    --txt_color6: #4811BD;
 }
 
 /* ******************************************Header************************************************ */
@@ -520,4 +521,47 @@ body{
     border-bottom: 1px solid black;
 }
 
+.view_lots_accordion_body ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.view_lots_accordion_body ul li a{
+    text-decoration: none;
+    color: var(--txt_color4);
+}
+
+.additional-categories{
+    display: none;
+}
+
+.show_more_button{
+    background-color: #00000000;
+    color: var(--txt_color6);
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.show_more_button:hover{
+    background-color: #00000000;
+    color: var(--txt_color3);
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.show_more_button:active {
+    color: var(--txt_color6) !important;
+    background-color: #00000000 !important;
+    border: none;
+}
+
+.show_more_button:focus-visible {
+    color: var(--txt_color6);
+    background-color: #00000000;
+    border: none;
+    outline: 0px;
+    box-shadow: none;
+}
 

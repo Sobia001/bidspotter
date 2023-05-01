@@ -55,6 +55,7 @@
                         <h4 class="view_lots_heading_4">Refine Your Search </h4>
 
                         <!-- ------Lot Search Accordions------- -->
+                        <!-- -----------Accordion 1------------- -->
                         <div class="container mt-3 accordion_container">
                             <div class="accordion view_lots_accordion_div" id="accordionPanelsStayOpenExample">
                                 <div class="accordion-item view_lots_accordion_item">
@@ -69,6 +70,7 @@
                                         </button>
                                     </div>
                                 </div>
+                                <!-- -----------Accordion 2------------- -->
                                 <div class="accordion-item view_lots_accordion_item">
                                     <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                                         <button class="accordion-button view_lots_accordion_button" type="button"
@@ -82,6 +84,7 @@
                                         </button>
                                     </h2>
                                 </div>
+                                <!-- -----------Accordion 3------------- -->
                                 <div class="accordion-item view_lots_accordion_item">
                                     <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                                         <button class="accordion-button barfi-btn view_lots_accordion_button"
@@ -95,6 +98,7 @@
                                             Location
                                         </button>
                                     </h2>
+                                    <!-- -----------Accordion 3 Inner Section------------- -->
                                     <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                                         aria-labelledby="panelsStayOpen-headingThree">
                                         <div class="accordion-body view_lots_accordion_body">
@@ -152,6 +156,66 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- -----------Accordion 4------------- -->
+                                <div class="accordion-item view_lots_accordion_item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                        <button class="accordion-button barfi-btn view_lots_accordion_button"
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                            aria-controls="panelsStayOpen-collapseFour">
+                                            <div class="form-check accordion_checkbox_div mt-1">
+                                                <input class="form-check-input chkAll me-2 accordion_check_box"
+                                                    type="checkbox" value="" id="chkAccordion3All">
+                                            </div>
+                                            Category
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="panelsStayOpen-headingFour">
+                                        <div class="accordion-body view_lots_accordion_body">
+                                            <ul>
+                                                <li class="category"><a href="">Restaurant and Bar Equipment (2345)</a>
+                                                </li>
+                                                <li class="category"><a href="">Processing (345)</a></li>
+                                                <li class="category"><a href="">Refrigeration (245)</a></li>
+                                                <li class="category"><a href="">Cooker and Cookware (235)</a></li>
+                                                <li class="additional-categories" style="display:none;"><a
+                                                        href="">Agriculture Equipments (245)</a></li>
+                                                <li class="additional-categories" style="display:none;"><a
+                                                        href="">Automotive & Vehicles (145)</a></li>
+                                                <li class="additional-categories" style="display:none;"><a
+                                                        href="">Computer & Electronics (35)</a></li>
+                                                <li class="additional-categories" style="display:none;"><a href="">wood
+                                                        working (89)</a></li>
+                                                <li class="additional-categories" style="display:none;"><a href="">Other
+                                                        Industry (521)</a></li>
+                                            </ul>
+                                            <div class="text-end">
+                                                <button class="btn btn-primary show_more_button" type="button"
+                                                    onclick="showMore(this)">
+                                                    <span>Show More</span>
+                                                    <i class="fas fa-caret-down"></i>
+                                                </button>
+                                            </div>
+
+                                            <script>
+                                                function showMore(button) {
+                                                    var parent = button.parentNode.previousElementSibling;
+                                                    var additionalCategories = parent.querySelectorAll('.additional-categories');
+                                                    for (var i = 0; i < additionalCategories.length; i++) {
+                                                        additionalCategories[i].style.display = (additionalCategories[i].style.display === 'none') ? 'list-item' : 'none';
+                                                    }
+                                                    button.querySelector('span').textContent = (button.querySelector('span').textContent === 'Show More') ? 'Show Less' : 'Show More';
+                                                    button.querySelector('i').classList.toggle('fa-caret-down');
+                                                    button.querySelector('i').classList.toggle('fa-caret-up');
+                                                }
+                                            </script>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>
